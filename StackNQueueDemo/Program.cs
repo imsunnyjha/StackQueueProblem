@@ -16,6 +16,12 @@ namespace StackNQueueDemo
             stackop.Peek();
             stackop.Pop();
             stackop.isEmpty();
+
+            QueueOperation queueop = new QueueOperation();
+            queueop.Enqueue(56);
+            queueop.Enqueue(30);
+            queueop.Enqueue(70);
+            queueop.Display();
         }
     }
 }
