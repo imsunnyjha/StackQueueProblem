@@ -13,6 +13,9 @@ namespace StackNQueueDemo
             stackop.Push(30);
             stackop.Push(70);
             stackop.Display();
+            stackop.Peek();
+            stackop.Pop();
+            stackop.isEmpty();
         }
     }
 }
