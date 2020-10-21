@@ -34,5 +34,32 @@ namespace StackNQueueDemo
                 temp = temp.next;
             }
         }
+        internal void Peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is Empty!");
+                return;
+            }
+            Console.WriteLine(this.top.data + " is the top");
+        }
+
+        internal void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is Empty!");
+            }
+            Console.WriteLine("Value popped is: " + this.top.data);
+            this.top = this.top.next;
+        }
+        internal void isEmpty()
+        {
+            while (this.top != null)
+            {
+                Peek();
+                Pop();
+            }
+        }
     }
 }
