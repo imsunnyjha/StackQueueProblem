@@ -22,6 +22,8 @@ namespace StackNQueueDemo
             queueop.Enqueue(30);
             queueop.Enqueue(70);
             queueop.Display();
+            queueop.Dequeue();
+            queueop.isEmpty();
         }
     }
 }

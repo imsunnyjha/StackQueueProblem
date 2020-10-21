@@ -40,5 +40,21 @@ namespace StackNQueueDemo
                 temp = temp.next;
             }
         }
+        internal void Dequeue()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Queue is Empty!");
+            }           
+            Console.WriteLine("Dequeued element " + head.data);
+            head = head.next;
+        }
+        internal void isEmpty()
+        {
+            while (head != null)
+            {               
+                Dequeue();
+            }
+        }
     }
 }
